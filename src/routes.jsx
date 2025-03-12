@@ -9,7 +9,7 @@ function AppRoutes() {
     <Nav/>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/pesquisar" element={<Pesquisar />} />
+        <Route path="pesquisa" element={<Pesquisar />} />
       </Routes>
     </BrowserRouter>
   );

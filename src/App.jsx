@@ -1,6 +1,5 @@
 import "./App.css";
 import Card from "./componentes/Card/Card.jsx";
-import { v4 as uuidv4 } from "uuid";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
         <section>
           {animes.map((anime) => (
             <Card
-              key={uuidv4()}
+              key={anime.mal_id}
               titulo={anime.title}
               episodios={anime.episodes}
               imagem={anime.images.jpg.image_url}
