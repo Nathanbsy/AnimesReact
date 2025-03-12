@@ -10,6 +10,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="pesquisa" element={<Pesquisar />} />
+        <Route path="temporada" element={<Temporada />} />
       </Routes>
     </BrowserRouter>
   );
