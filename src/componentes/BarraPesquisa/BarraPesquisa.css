@@ -1,0 +1,14 @@
+.container-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pesquisa  {
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 16px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
+}
