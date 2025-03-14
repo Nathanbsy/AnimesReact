@@ -27,6 +27,7 @@ function App() {
               imagem={anime.images.jpg.image_url}
               nota={anime.score}
               ranking={anime.rank}
+              idAnime={anime.mal_id}
             />
           ))}
         </section>
