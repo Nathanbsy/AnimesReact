@@ -4,6 +4,7 @@ import Pesquisar from "./pages/Pesquisar.jsx";
 import Temporada from "./pages/Temporada.jsx";
 import Nav from "./componentes/Nav/Nav.jsx";
 import Detalhes from "./pages/Detalhes.jsx";
+import MinhaLista from "./pages/MinhaLista.jsx";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
         <Route path="pesquisa" element={<Pesquisar />} />
         <Route path="temporada" element={<Temporada />} />
         <Route path="detalhes" element={<Detalhes />} />
+        <Route path="minhalista" element={<MinhaLista />} />
       </Routes>
     </BrowserRouter>
   );

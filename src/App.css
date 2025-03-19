@@ -18,3 +18,8 @@ section {
     align-items: center;
     gap: 25px;
 }
+
+.container-card {
+    display: flex;
+    gap: 5px;
+}

@@ -8,6 +8,7 @@ function Nav() {
             <nav>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/temporada">Temporada</NavLink>
+                <NavLink to="/minhalista">Minha Lista</NavLink>
             </nav>
             <BarraPesquisa/>
         </header>
