@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     width: 300px;
-    height: 450px;
+    height: fit-content;
     background-color: #E14141;
     border-radius: 16px;
     cursor: pointer;
