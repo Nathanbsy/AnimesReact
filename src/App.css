@@ -24,3 +24,11 @@ section {
     gap: 5px;
     margin-left: 2rem;
 }
+@media (width >= 768px) {
+    
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

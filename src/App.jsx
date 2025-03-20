@@ -21,8 +21,9 @@ function App() {
     <>
       <main>
         <h1>Seja Bem-vindo(a)</h1>
+        <h2>Top animes</h2>
         <section>
-          <h2>Top animes</h2>
+          
           {animes.map((anime) => (
             <div className="container-card">
               <Card
