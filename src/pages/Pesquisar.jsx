@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 import Card from "../componentes/Card/Card";
+import BotaoAdd from "../componentes/BotaoAdd/BotaoAdd";
 
 function Pesquisar() {
   const [searchParams] = useSearchParams();
@@ -19,21 +20,24 @@ function Pesquisar() {
     }
     fetchAnimes();
   }, [titulo]);
-  
+
   return (
     <>
       <main>
         <h1>Resultados por: {titulo}</h1>
         <section>
           {animes.map((anime) => (
-            <Card
-              key={anime.mal_id}
-              titulo={anime.title}
-              episodios={anime.episodes}
-              imagem={anime.images.jpg.image_url}
-              nota={anime.score}
-              idAnime={anime.mal_id}
-            />
+            <div className="container-card">
+              <Card
+                key={anime.mal_id}
+                titulo={anime.title}
+                episodios={anime.episodes}
+                imagem={anime.images.jpg.image_url}
+                nota={anime.score}
+                idAnime={anime.mal_id}
+              />
+              <BotaoAdd anime={anime} />
+            </div>
           ))}
         </section>
       </main>
