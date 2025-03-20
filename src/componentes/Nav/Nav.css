@@ -8,14 +8,50 @@ header {
 nav {
     display: flex;
     gap: 20px;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
 }
 
 .navlink {
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
+    transition: .4s;
+    
 }
 
-.linkativo {
-    text-decoration: underline;
+.linkativo a {
+    color: #E14141;
+}
+
+.navlink:hover {
+    color: #E14141;
+}
+
+.traco {
+    position: absolute;
+    top: 100%;
+    width: 70px;
+    height: 3px;
+    background-color: #E14141;
+    transition: all ease .4s;
+    border-radius: 16px;
+}
+
+
+
+nav ul li.linkativo:nth-child(1) ~ .traco {
+    transform: translateX(calc(100px * 0));
+}
+nav ul li.linkativo:nth-child(2) ~ .traco {
+    width: 140px;
+    transform: translateX(calc(95px * 1));
+}
+nav ul li.linkativo:nth-child(3) ~ .traco {
+    width: 130px;
+    transform: translateX(calc(128px * 2));
 }

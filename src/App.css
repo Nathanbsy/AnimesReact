@@ -22,4 +22,5 @@ section {
 .container-card {
     display: flex;
     gap: 5px;
+    margin-left: 2rem;
 }

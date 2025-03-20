@@ -6,6 +6,7 @@ function BarraPesquisa() {
   const [pesquisa, setPesquisa] = useState("");
   const navigate = useNavigate();
   function pesquisar(titulo) {
+    if (!titulo) return;
     const query = new URLSearchParams();
     query.set("q", titulo);
     navigate(`/pesquisa?${query.toString()}`);
